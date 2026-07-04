@@ -1,8 +1,8 @@
 {
   "name": "xiaomi-mimo-copilot-chat",
-  "displayName": "Xiaomi MiMo GitHub Copilot Chat",
-  "description": "Bring your own MiMo API key to VS Code Copilot Chat. Adds Xiaomi MiMo models through the Language Model Chat Provider API.",
-  "version": "0.1.3",
+  "displayName": "MiMo Copilot Chat: BYOK Xiaomi AI Models (1M Context)",
+  "description": "Use Xiaomi MiMo AI models (mimo-v2.5, mimo-v2.5-pro, 1M context window) in GitHub Copilot Chat. BYOK, no Copilot Pro needed.",
+  "version": "0.1.4",
   "publisher": "ltmoerdani",
   "preview": true,
   "license": "MIT",
@@ -14,25 +14,52 @@
   "keywords": [
     "mimo",
     "xiaomi",
-    "copilot",
-    "byok",
-    "ai",
-    "language model",
-    "openai",
-    "llm",
-    "chat",
     "xiaomi-mimo",
     "mimo-v2.5",
+    "mimo-v2.5-pro",
+    "copilot",
     "copilot-chat",
-    "vscode-extension",
-    "gpt-alternative",
-    "claude-alternative",
-    "free-ai",
+    "byok",
+    "bring-your-own-key",
+    "ai",
+    "language-model",
+    "language-models",
+    "openai",
+    "anthropic",
+    "claude",
+    "gpt",
+    "gpt-5",
+    "gemini",
+    "grok",
+    "deepseek",
+    "qwen",
+    "kimi",
+    "glm",
+    "minimax",
+    "llm",
+    "chat",
+    "reasoning",
+    "thinking",
+    "agent",
+    "free-models",
+    "long-context",
+    "1m-context",
     "api-key",
-    "chat-completions",
     "code-assistant",
-    "programming",
-    "developer-tools"
+    "coding",
+    "developer-tools",
+    "gpt-alternative",
+    "claude-alternative"
+  ],
+  "categories": [
+    "AI",
+    "Machine Learning",
+    "Data Science",
+    "Education",
+    "Other"
+  ],
+  "tags": [
+    "language-models"
   ],
   "repository": {
     "type": "git",
@@ -45,11 +72,6 @@
   "engines": {
     "vscode": "^1.125.0"
   },
-  "categories": [
-    "AI",
-    "Programming Languages",
-    "Other"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [

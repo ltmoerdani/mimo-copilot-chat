@@ -4,6 +4,15 @@ All notable changes to the **Xiaomi MiMo Copilot Chat** extension are documented
 
 Forked from [opencode-copilot-chat](https://github.com/ltmoerdani/opencode-copilot-chat).
 
+## [0.1.4] — 2026-07-04
+
+### Changed
+
+- **Marketplace SEO overhaul** — `displayName` now leads with value proposition ("BYOK Xiaomi AI Models (1M Context)"). Description rewritten pain-first with brand names. Keywords expanded from 21 to 38 entries (added `language-models`, `bring-your-own-key`, `reasoning`, `thinking`, `agent`, `long-context`, `1m-context`, and competitor brand keywords for search hijack).
+- **Added `@tag:language-models`** — extension now appears when users search `@tag:language-models` per the VS Code BYOK blog post.
+- **Categories expanded** — added `Machine Learning`, `Data Science`, `Education` for broader discovery.
+- **README rewritten as sales page** — added pitch block, comparison table (Copilot Free/Pro/Pro+ vs MiMo), 60-sec quick start, 7-item FAQ, review CTA, and sibling extension cross-promotion.
+
 ## [0.1.3] — 2026-06-14
 
 ### Fixed
