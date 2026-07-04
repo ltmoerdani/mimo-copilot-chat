@@ -1,0 +1,42 @@
+name: Dependabot Auto-Merge
+
+# Auto-approve and auto-merge Dependabot PRs when CI passes.
+# Uses pull_request_target (not pull_request) so the workflow runs
+# with the base branch's permissions and secrets, allowing it to
+# approve and merge even though branch protection requires review.
+#
+# Strategy: no-ff merge (merge commit) to preserve merge history.
+# Only triggers for PRs opened by dependabot[bot].
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    # Only run for Dependabot PRs
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Approve Dependabot PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr review "$PR_NUMBER" --approve \
+            --body "Auto-approved: Dependabot dependency bump (CI passing required before merge)." \
+            --repo "$REPO"
+
+      - name: Enable auto-merge (no-ff) when CI passes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr merge "$PR_NUMBER" --merge --auto --repo "$REPO"
