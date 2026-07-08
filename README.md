@@ -6,7 +6,7 @@
 
 **BYOK (Bring Your Own Key). Pay only for what you use.**
 
-[![Version](https://img.shields.io/badge/version-0.1.4-blue)](https://github.com/ltmoerdani/xiaomi-mimo-copilot-chat/releases)
+[![Version](https://img.shields.io/badge/version-0.1.5-blue)](https://github.com/ltmoerdani/xiaomi-mimo-copilot-chat/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.125%2B-blue)](https://code.visualstudio.com/)
 [![MiMo](https://img.shields.io/badge/MiMo-V2.5-orange)](https://xiaomimimo.com)

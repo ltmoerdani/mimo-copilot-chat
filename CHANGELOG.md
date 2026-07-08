@@ -4,6 +4,12 @@ All notable changes to the **Xiaomi MiMo Copilot Chat** extension are documented
 
 Forked from [opencode-copilot-chat](https://github.com/ltmoerdani/opencode-copilot-chat).
 
+## [0.1.5] — 2026-07-08
+
+### Fixed
+
+- **VS Code 1.128 BYOK utility model compatibility** — VS Code 1.128 introduced `chat.byokUtilityModelDefault` with a default of `"none"`, which broke all background utility tasks (chat title generation, commit messages, intent detection) for BYOK users. The extension now automatically sets `chat.byokUtilityModelDefault = "mainAgent"` on first activation (VS Code 1.128+), routing background tasks to the currently-selected MiMo model. A one-time toast notification confirms the fix. Users who have already configured any utility model setting are left untouched.
+
 ## [0.1.4] — 2026-07-04
 
 ### Changed
