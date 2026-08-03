@@ -4,6 +4,14 @@ All notable changes to the **Xiaomi MiMo Copilot Chat** extension are documented
 
 Forked from [opencode-copilot-chat](https://github.com/ltmoerdani/opencode-copilot-chat).
 
+## [0.1.6] — 2026-08-04
+
+### Changed
+
+- **TypeScript 5.9.3 → 7.0.2** — upgraded to TypeScript 7.0.2 (major version jump). Fixed `tsconfig.json` by adding `"types": ["node"]` to resolve TS 7 stricter type resolution (`TS2591: Cannot find name 'Buffer'` and `node:async_hooks`).
+- **`@types/node` 26.1.0 → 26.1.2** — patch bump for latest Node.js type definitions.
+- **`actions/setup-node` v4 → v7** — updated all GitHub Actions workflows (`ci.yml`, `publish.yml`, `release.yml`) to `setup-node@v7`.
+
 ## [0.1.5] — 2026-07-08
 
 ### Fixed

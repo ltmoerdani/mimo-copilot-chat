@@ -2,7 +2,7 @@
   "name": "xiaomi-mimo-copilot-chat",
   "displayName": "MiMo Copilot Chat: BYOK Xiaomi AI Models (1M Context)",
   "description": "Use Xiaomi MiMo AI models (mimo-v2.5, mimo-v2.5-pro, 1M context window) in GitHub Copilot Chat. BYOK, no Copilot Pro needed.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "ltmoerdani",
   "preview": true,
   "license": "MIT",
